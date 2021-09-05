@@ -1,0 +1,837 @@
+  #mainDivOffers{
+    width: 500px ;
+    display: none;
+    margin: 30px auto 30px auto;
+    padding: 0px;
+    position: relative;
+    display: none;
+    background-color: ;
+    transition: 0.55s ease-in;
+    left:-950px;
+  }
+
+  #offers-container{
+    width: 500px ;
+    display: block;
+    margin: 0px auto;
+    height: 150px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  #offerImage-container{
+    width: 150px;
+    height: inherit;
+    border: 0px;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  #removeOfferBTN{
+    padding: 15px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    border: 0px;
+    opacity: 80%;
+
+  }
+
+  #removeOfferBTN:hover{
+    opacity: 100%;
+    color: white;
+  }
+
+  #removeOfferBTN span{
+    font-size: 18px;
+    writing-mode: vertical-lr;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  
+
+  #offerName{
+    font-size: 25pt;
+    color: #111;
+    margin: 5px;
+    font-weight: bold;
+    width: 295px;
+  }
+
+  #offerOwner{
+    margin: 5px;
+    width: 295px;
+  }
+
+  #offerType{
+    margin: 5px;
+    width: 295px;
+  }
+
+  #offers-container-cover{
+    width: 500px ;
+    height: 175px;
+    background-color: inherit;
+    margin-bottom: 30px;
+
+  }
+
+  #requestedForm{
+
+  }
+
+  .status{
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    transform: rotate(-45deg);
+  }
+
+  #requested{
+    color:red !important;
+  }
+
+  #requested2{
+    color:red !important;
+  }
+
+  /*here the fav div styles*/
+    #mainDivFav{
+    width: 500px ;
+    display: none;
+    margin: 30px auto 30px auto;
+    padding: 0px;
+    position: relative;
+    display: none;
+    background-color: ;
+    transition: 0.55s ease-in;
+    left:-950px;
+  }
+
+  #fav-container{
+    width: 500px ;
+    display: block;
+    margin: 0px auto;
+    height: 150px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  #favImage-container{
+    width: 150px;
+    height: inherit;
+    border: 0px;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  #removeFavBTN{
+    padding: 15px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    border: 0px;
+    opacity: 80%;
+
+  }
+
+  #removeFavBTN:hover{
+    opacity: 100%;
+    color: white;
+  }
+
+  #removeFavBTN span{
+    font-size: 14.5px;
+    writing-mode: vertical-lr;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+
+  
+
+  #FavName{
+    font-size: 25px;
+    color: #111;
+    margin: 5px;
+    font-weight: bold;
+    width: auto;
+    padding: 0px;
+    background-color: ;
+  }
+
+  #FavOwner{
+    font-size: 15px;
+    margin: 5px;
+    width: auto;
+    padding: 0px;
+
+    background-color: ;
+  }
+
+  #hiddenSubmitFromProduct{
+      background-color: inherit;
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      background-color: ;
+      font-weight: bold;
+    }
+
+    #hiddenSubmitFromProduct:hover{
+      font-weight: bold;
+      color: #444;
+    }
+
+  #FavType{
+    font-size: 15px;
+    margin: 5px;
+    width: auto;
+        background-color: ;
+        padding: 0px;
+  }
+
+  #fav-container-cover{
+    width: 500px ;
+    height: 175px;
+    background-color: inherit;
+    margin-bottom: 30px;
+
+  }
+  header{
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  }
+
+
+.navbar {
+  margin: 0;
+  border-radius: 0px;
+  height: 52px;
+}
+.card {
+  
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.conbtn {
+  margin-bottom:0px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+
+}
+
+.conbtn:hover {
+  opacity: 90%;
+}
+
+.sm {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 50%;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+
+img{
+  width: 150px;
+  height: 150px;
+
+
+}
+        #editImageCon{
+          background-color: ;
+          height: 50px;
+          position: relative;
+          display: none;
+          width: 300px;
+          margin-bottom: 20px;
+        }
+
+        #subbtn{
+          display: inline-block;
+          position: relative;
+          font-family: arial;
+          background-color: inherit;
+          border: 0;
+          cursor: pointer;
+          color: black;
+          float: left;
+        }
+
+        #subbtn:hover{
+          font-weight: ;
+          color: green;
+        }
+
+        #upload-form{
+          display: none;
+          font-size: 8pt;
+          float: left;
+        }
+
+        #deletebtn{
+          display: inline-block;
+          position: relative;
+          font-family: arial;
+          background-color: inherit;
+          border: 0;
+          cursor: pointer;
+          color: black;
+          float: left;
+        }
+
+        #deletebtn:hover{
+          font-weight: bold;
+          color: red;
+        }
+
+        #delete-form{
+          display: none;
+          font-size: 8pt;
+          margin-bottom: 100px;
+          float: right;
+        }
+
+        #changebtn{
+          display: inline-block;
+          position: relative;
+          font-family: arial;
+          background-color: inherit;
+          border: 0;
+          cursor: pointer;
+          display: none;
+        }
+
+        
+
+        #close {
+        position: relative;
+        
+        color: #000;
+        font-size: 14pt;
+        font-weight: bold;
+        display: none;
+        }
+
+        #close:hover,
+        #close:focus {
+          color: red;
+          cursor: pointer;
+        }
+
+
+/*editing style*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=tel],select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus,select:focus {
+  background-color: #ddd;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity:1;
+} */
+
+.signupbtn2{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  box-sizing: border-box;
+}
+
+.signupbtn2:hover{
+  opacity:1;
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn2 {
+  padding: 14px 20px;
+  background-color: #f44336;
+  box-sizing: border-box;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.cancelbtn2:hover{
+  opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn2 {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  box-sizing: border-box;
+
+}
+
+.signupbtn2:hover{
+  opacity:1;
+}
+
+/* Add padding to container elements */
+.container2 {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  box-sizing: border-box;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+ 
+/* The Close Button (x) */
+.close2 {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.editbtn{
+  background-color: #000;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  opacity: 0.9;
+  box-sizing: border-box;
+  font-size: 8pt;
+  position: fixed;
+  top:100px;
+  color: white;
+  left: -30px;
+  transition: 0.4s ease-in;
+  border-radius: 0 5px 5px 0;
+  z-index: 0;
+}
+
+.editbtn:hover{
+  opacity: 0.8;
+  left: 0px;
+}
+
+.offersbtn{
+  background-color: #000;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  opacity: 0.9;
+  box-sizing: border-box;
+  font-size: 8pt;
+  position: fixed;
+  top:150px;
+  color: white;
+  left: -30px;
+  transition: 0.4s ease-in;
+  border-radius: 0 5px 5px 0;
+  z-index: 0;
+}
+
+.offersbtn:hover{
+  opacity: 0.8;
+  left: 0px;
+}
+
+.offerNewThing{
+  background-color: #000;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  opacity: 0.9;
+  box-sizing: border-box;
+  font-size: 8pt;
+  position: fixed;
+  top:200px;
+  color: white;
+  left: -30px;
+  transition: 0.4s ease-in;
+  border-radius: 0 5px 5px 0;
+  z-index: 0;
+}
+
+.offerNewThing:hover{
+  opacity: 0.8;
+  left: 0px;
+}
+
+.favbtn{
+  background-color: #000;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  opacity: 0.9;
+  box-sizing: border-box;
+  font-size: 8pt;
+  position: fixed;
+  top:250px;
+  color: white;
+  left: -30px;
+  transition: 0.4s ease-in;
+  border-radius: 0 5px 5px 0;
+  z-index: 0;
+}
+
+.favbtn:hover{
+  opacity: 0.8;
+  left: 0px;
+}
+
+.Errors{
+      color: red;
+      display: inline;
+      font-weight: bold;
+      position: absolute;
+      right: 0px;
+      z-index: 1;
+      font-size: 10pt;
+      padding: 20px 500px 0 0;
+      font-size: 12pt;
+      
+    }
+
+@media screen and (max-width: 850px) {
+  
+
+   .Errors{
+      padding: 20px 180px 0 0;
+      font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 767px) {
+.navbar {
+      height: auto;
+  }
+
+   .offerNewThing{
+    position: absolute;
+  left: 0px;
+  }
+
+  .editbtn{
+    left: 0px;
+    position: absolute;
+  }
+
+  .favbtn{
+    left: 0px;
+    position: absolute;
+  }
+
+  .offersbtn{
+    left: 0px;
+    position: absolute;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 500px) {
+  
+
+    .offersbtn{
+    left: 0px;
+  }
+
+    #mainDivOffers{
+    width: 100% ;
+  }
+
+  #offers-container-cover{
+    width: 100% ;
+  }
+
+    #offers-container{
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  #offerName{
+    font-size: 25px;
+    width: auto;
+    
+  }
+
+  #favName{
+    font-size: 20px;
+    padding: 0px;
+    background-color: ;
+  }
+
+  #favOwner{
+    font-size: 20px;
+    padding: 0px;
+    margin: 5px;
+    background-color: ;
+  }
+
+  #favType{
+    font-size: 20px;
+    padding: 0px;
+    margin: 5px;
+    background-color: ;
+  }
+
+
+      .favsbtn{
+    left: 0px;
+  }
+
+    #mainDivFav{
+    width: 100% ;
+  }
+
+  #fav-container-cover{
+    width: 100% ;
+  }
+
+    #fav-container{
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  #favName{
+    font-size: 25px;
+    width: auto;
+    
+  }
+
+  #favOwner{
+    font-size: 20px;
+  width: auto;
+  }
+
+  #favType{
+    font-size: 20px;
+  width: auto;
+  }
+ }
+
+  @media only screen and (max-width: 466px) {
+    #offerName{
+    font-size: 20px;
+    width:auto;
+  }
+
+  #offerOwner{
+    font-size: 15px;
+    width:auto;
+  }
+
+  #offerType{
+    font-size: 15px;
+    width:auto;
+  }
+
+  #favName{
+    font-size: 20px;
+  }
+
+  #favOwner{
+    font-size: 15px;
+  }
+
+  #favType{
+    font-size: 15px;
+  }
+  }
+
+  @media only screen and (max-width: 416px) {
+    #offerName{
+    font-size: 15px;
+  }
+
+  #offerOwner{
+    font-size: 10px;
+  }
+
+  #offerType{
+    font-size: 10px;
+  }
+
+  #favName{
+    font-size: 15px;
+  }
+
+  #favOwner{
+    font-size: 10px;
+  }
+
+  #favType{
+    font-size: 10px;
+  }
+
+  }
+
+  /* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn2, .signupbtn2 {
+     width: 100%;
+
+  }
+
+  .Errors{
+      font-size: 5pt;
+      padding: 20px 100px 0 0;
+      font-size: 8pt;
+    }
+}

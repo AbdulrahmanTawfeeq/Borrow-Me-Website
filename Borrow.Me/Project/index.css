@@ -1,0 +1,931 @@
+
+
+
+.mySlides2 {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+.sliderImage {
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  width: inherit;
+  height: auto;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade2;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.mySlides {display: none;}
+.para {
+  font-weight: bold;
+  font-size: 2vw;
+  margin: 0 auto;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+    body{
+      height: auto;
+    }
+
+    .notify{
+      padding: 10px;
+      font-family: arial;
+      font-weight: bold;
+      border-radius: 100%;
+      font-size: 11pt;
+      color: tomato;
+      position: absolute;
+    }
+
+    
+
+    #removeOfferBTN{
+    position: absolute;
+    right: 56px;
+    top: 1px;
+    bottom: 0;
+    background-color: red;
+    border: 0px;
+    opacity: 25%;
+    height: 30px;
+  }
+
+  #removeOfferBTN:hover{
+    opacity: 100%;
+    color: white;
+  }
+
+  #removeOfferBTN span{
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+    .searchPage{
+      background-color: white;
+      height: 600px;
+      position: absolute;
+      z-index: 1;
+      width: 700px;
+      display: none;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      border: 0px;
+    }
+
+    #offerForm-container{
+      background-color: whitesmoke;
+      display: block;
+      margin: 0 auto;
+      width: 650px;
+      padding: 20px;
+      color: #333;
+      font-weight: bold;
+      border-left: 1.3px solid #bbb;
+      border-right: 1.3px solid #bbb;
+      border-bottom: 1.3px solid #bbb;
+      transition: 0.8s ease-in;
+      position: absolute;
+      top: -340px;
+      left: 0;
+      right: 0;
+      border-radius: 0 0 5px 5px;
+      z-index: 1;
+    }
+
+    #offerForm input[type=text],input[type=file]{
+      display: block;
+      margin-left: 0px;
+      padding: 5px;
+      margin-bottom: 25px;
+      outline: none;
+      width: 100%;
+    }
+
+    #offerForm input[type=text]{
+      border: 0px;
+      background-color: inherit;
+      border-bottom: 1px solid gray;
+      
+      
+    }
+
+    #offerForm input[type=radio]{
+      display: inline-block;
+      margin-bottom: 25px;
+      margin-left: 0px;
+
+    }
+
+    .radioText{
+      margin-right: 30px;
+      text-transform: uppercase;
+      padding-left: 5px;
+    }
+
+    #submitOffer{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      padding: 10px;
+      border: 0px;
+      background-color: #333;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    #submitOffer:hover{
+      color: white;
+    }
+
+    header{
+      z-index: 2;
+    }
+    .navbar {
+      margin: 0;
+      border-radius: 0px;
+    }
+
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      display: block;
+      position: relative;
+      bottom: 0px;
+      width: 100%;
+      height: 50px;
+    }
+
+    .chipText{
+      font-size: 0.85vw;
+      font-weight: bold;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 100%;}
+
+    .main{
+      height: 600px;
+      padding: 0px;
+      background-image: url(images/home.png);
+      background-size: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .backgroundIf{
+      width: 480px;
+      display: block;
+      opacity: 50%;
+      position: relative;
+      bottom: 0px;
+      margin: 0 auto;
+    }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 600px;
+      padding: 20px 0 20px 0;
+      
+    }
+
+    #neighbors{
+      display: none;
+      height: 400px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: ;
+      padding: 10px 5px 5px 5px;
+    }
+
+    #offerBTN,#searchBTN,#inboxBTN{
+      background-color: #333;
+      color: #aaa;
+      border: 0px;
+      padding: 10px;
+      width: 100%;
+      display: block;
+      margin: 20px 0;
+      cursor: pointer;
+      border-radius: 0px;
+    }
+
+    #offerBTN:hover,#searchBTN:hover,#inboxBTN:hover{
+      color: #fff;
+    }
+
+    #neighborsBTN{
+      background-color: #333;
+      color: #aaa;
+      border: 0px;
+      padding: 10px;
+      width: 100%;
+      display: block;
+      margin: 20px 0 0 0;
+      cursor: pointer;
+      border-radius: 0px;
+    }
+
+    #neighborsBTN:hover{
+      color: #fff;
+
+    }
+
+    #hiddenSubmitFromProduct{
+      background-color: inherit;
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      background-color: ;
+      font-weight: bold;
+    }
+
+    #hiddenSubmitFromProduct:hover{
+      font-weight: bold;
+      color:#444;
+    }
+
+    #hiddenSubmit{
+      position: absolute;
+      top:0px;
+      left: 0px;
+      opacity: 0%;
+      height: 50px;
+      border-radius: 75px;
+      width: 13.8vw;
+      background-color: ;
+      border:0px;
+
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 0 25px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 25px;
+      background-color: white;
+      box-shadow: 1px 1px 2px #ccc;
+      width: 13.8vw;
+      margin-bottom: 10px;
+      position: relative;
+      transition: 0.2s ease-in;
+
+    }
+
+    .chip:hover{
+      background-color: #ddd;
+    }
+
+    .chip img {
+      float: left;
+      margin: 0 10px 0 -25px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    #profileChip{
+      text-decoration: none;
+      color: black;
+    }
+
+    .welcoming{
+      text-align: center;
+      color: #333;
+      font-family: arial;
+      font-size: 14pt;
+      text-shadow: 0.5px 0.5px 8px pink;
+      padding: 10px;
+      margin-top: 20px;
+      transition: 5s ease-in;
+
+    }
+
+    .alert{
+      text-align: center;
+      color: #333;
+      font-family: arial;
+      font-size: 14pt;
+      text-shadow: 0.5px 0.5px 8px red;
+      padding: 10px;
+      margin-top: 20px;
+      
+    }
+
+    .offersbtn{
+      background-color: #000;
+      color: white;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      height: 25px;
+      opacity: 0.9;
+      box-sizing: border-box;
+      font-size: 8pt;
+      position: absolute;
+      top:150px;
+      color: white;
+      left: -30px;
+      transition: 0.4s ease-in;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .offersbtn:hover{
+      opacity: 0.8;
+      left: 0px;
+    }
+      #mainDivOffers{
+        width: 100% ;
+        display: block;
+        margin: 0 auto 30px auto;
+        padding: 0px;
+        border-radius: 0px;
+        position: relative;
+        background-color: ;
+        transition: 0.55s ease-in;
+        height: auto;
+        max-height: 600px;
+        overflow: auto;
+      }
+
+      #offers-container{
+        border-radius: 0px;
+        width: 650px ;
+        display: block;
+        height: 200px;
+        padding: 0px;
+        position: absolute;
+        overflow: hidden;
+        border-bottom: 0px;
+        top:0px;
+      }
+
+      #favContainer{
+        background-color: ;
+        border-radius: 0 0 4px 4px;
+        width: 650px ;
+        display: block;
+        margin: 30px auto 30px auto;
+        height: 230px;
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .submitFav{
+        border-radius: 0 0 4px 4px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 30px;
+        background-color: inherit;
+        border: 0px;
+        color: #999;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+      }
+
+      .submitFav:hover{
+        color: #777;
+        font-weight: bold;
+      }
+
+      #submitFav{
+        display: block;
+      }
+
+      #removeFav{
+        display: block;
+      }
+
+      #offerImage-container{
+        width: 200px;
+        height: inherit;
+        border: 0px;
+        float: left;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+
+      }
+
+      #offerImage-container img{
+      width: 200px;
+      height: 200px;
+      }
+
+      .title {
+      color: grey;
+      font-size: 18px;
+      padding-top: 10px;
+      }
+
+      .text{
+        
+      }
+
+      #requestOfferBTN{
+        padding: 15px;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        background-color: #4daece;
+        border: 0px;
+        opacity: 90%;
+
+      }
+
+      #requestOfferBTN:hover{
+        opacity: 100%;
+        color: #333;
+      }
+
+      #requestOfferBTN span{
+        font-size: 18px;
+        writing-mode: vertical-lr;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      #text-container{
+        background-color: ;
+        width: auto;
+        display: block;
+        float: left;
+        height: inherit;
+      }
+
+      #offerName{
+        font-size: 25pt;
+        color: #111;
+        margin: 5px;
+        font-weight: bold;
+        width: auto;
+      }
+
+      #offerOwner{
+        margin: 5px;
+        width: auto;
+      }
+
+      #offerType{
+        margin: 5px;
+        width: auto;
+      }
+
+      .status{
+        /* 
+        position: absolute;
+        bottom: 25px;
+        right: 50px;
+        */
+        color: green;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 5px;
+
+         /* font-style: italic;
+         transform: rotate(-45deg); */
+      }
+
+      #requested{
+        color:red !important;
+      }
+
+    
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 1120px) {
+      .searchPage{
+      width: 600px;
+      }
+      #neighbors{
+        height: 393px;
+      }
+
+      #offerForm-container{
+        width: 475px;
+      }
+
+      #mainDivOffers{
+      }
+      #offers-container{
+        width: 500px;
+        height: 150px;
+      }
+      #favContainer{
+        width: 500px;
+        height: 180px;
+      }
+      .submitFav{
+        font-size: 9pt;
+      }
+      #offerImage-container{
+        width: 150px;
+        height:150px;
+      }
+      #offerImage-container img{
+        width: 150px;
+        height:150px;
+      }
+
+      .chipText{
+        font-size: 9pt !important;
+        position: absolute;
+        white-space: nowrap;
+        word-wrap: normal;
+        left:85px;
+        display: none;
+      }
+
+
+
+      #hiddenSubmit{
+      width: 50px;
+      left:25px;
+      }
+
+      #hiddenSubmit:hover{
+      opacity: 15%;
+      }
+
+      .chip {
+        width: 100px;
+        box-shadow: none;
+        background-color: #f1f1f1;
+      }
+
+      .chip:hover{
+        background-color: #f1f1f1;
+      }
+
+      /*.chip:hover .chipText{
+        display: inline-block;
+      }*/
+
+      .chip img {
+        margin: 0 auto;
+      }
+
+      #offerName{
+        font-size: 25px;
+      }
+
+      #offerOwner{
+        font-size: 15px;
+      }
+
+      #offerType{
+        font-size: 15px;
+      }
+
+
+
+      
+    }
+
+      @media screen and (max-width: 950px) {
+        .searchPage{
+          width: 530px;
+        }
+      }
+
+       @media screen and (max-width: 850px) {
+        .searchPage{
+          width: 515px;
+        }
+      }
+
+    @media screen and (max-width: 800px) {
+      .searchPage{
+          width: 470px;
+        }
+
+      header{
+        z-index: 4;
+      }
+      #offerForm-container{
+        width: 400px;
+      }
+
+      #mainDivOffers{
+      }
+
+      #offers-container{
+        width: 450px;
+      }
+      #favContainer{
+        width: 450px;
+      }
+
+      #offerName{
+        font-size: 22px;
+      }
+
+      #offerOwner{
+        font-size: 12px;
+      }
+
+      #offerType{
+        font-size: 12px;
+      }
+
+      .submitFav{
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .para {
+        font-size: 4vw;
+        letter-spacing: 3px;
+      }
+
+      .searchPage{
+          width: 100%;
+        }
+      .upperNav{
+          border-bottom: 25px solid #060606bd;
+        }
+
+      .lowerNav{
+          border-top: 25px solid #060606bd;
+      }
+
+    #mainDivOffers{
+    }
+
+    #offers-container{
+      width: 500px;
+    }
+
+    #favContainer{
+        width: 500px;
+    }
+
+    .submitFav{
+
+    }
+
+    .sidenav {
+      z-index: 2;
+      position: relative;
+    }
+
+      #offerForm-container{
+      position: absolute;
+    }
+
+
+    #offerBTN,#searchBTN,#inboxBTN{
+      background-color: inherit;
+      color: #666;
+      letter-spacing: 3px;
+      transform: scaleY(1);
+      font-size: 14pt;
+      font-family: arial;
+      padding: 10px;
+      width: 130px;
+      margin: 20px auto;
+    }
+
+    #offerBTN:hover,#searchBTN:hover,#inboxBTN:hover{
+      color: black;
+    }
+
+      /*form*/
+
+
+      .chipText{
+        font-size: 1.75vw !important;
+        font-weight: bold;
+        display: block;
+        position: relative;
+        left:0px;
+      }
+
+      #hiddenSubmit{
+      left: 0px;
+      width: 29vw;
+      }
+
+      #neighbors{
+        overflow: auto;
+        white-space: nowrap;
+        height: auto;
+      }
+      .chip {
+        width: 29vw;
+        background-color: white;
+      }
+
+      .chip:hover{
+        background-color: #ddd;
+      }
+      
+      .chip img {
+        margin: 0 10px 0 -25px;
+      }
+
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      
+      .row.content {height:auto;}
+
+      #neighborsBTN{
+      background-color: inherit;
+      color: #666;
+      letter-spacing: 3px;
+      transform: scaleY(1);
+      font-size: 14pt;
+      font-family: arial;
+      padding: 10px;
+      width: 130px;
+      margin: 20px auto;
+      }
+
+      #neighborsBTN:hover{
+        color: black;
+      }
+
+      #offerName{
+        font-size: 25px;
+      }
+
+      #offerOwner{
+        font-size: 15px;
+      }
+
+      #offerType{
+        font-size: 15px;
+      }
+
+      .submitFav{
+        font-size: 12px;
+      }
+
+        
+      }
+
+      @media screen and (max-width: 500px) {
+
+
+        #offerForm-container{
+          width: 100%;
+          background-color: #fbfbfb; 
+          border-left: 0px;
+          border-right: 0px;
+          border-bottom: 2px solid #444;
+        }
+        .chipText{
+          font-size: 2.3vw !important;
+          font-weight: bold;
+        }
+        #hiddenSubmit{
+          left: 0px;
+          width: 37vw;
+        }
+        .chip {
+          width: 37vw;
+          background-color: white;
+        }
+
+          .offersbtn{
+          left: 0px;
+        }
+
+          #mainDivOffers{
+          width: 100% ;
+        }
+
+          #offers-container{
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        #favContainer{
+          width: 100%;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+
+        #offerName{
+          font-size: 25px;
+          
+        }
+
+        #offerOwner{
+          font-size: 15px;
+        }
+
+        #offerType{
+          font-size: 15px;
+        }
+
+        .submitFav{
+        font-size: 12px;
+        }
+     }
+
+      @media only screen and (max-width: 466px) {
+      .main{
+        background-size: 466px;
+      }
+
+      .backgroundIf{
+        width: 466px;
+      }
+        #offerName{
+        font-size: 20px;
+      }
+
+      #offerOwner{
+        font-size: 13px;
+      }
+
+      #offerType{
+        font-size: 13px;
+      }
+
+      .submitFav{
+        font-size: 10px;
+      }
+      }
+
+      @media only screen and (max-width: 416px) {
+      .main{
+        background-size: 416px;
+      }
+
+      .backgroundIf{
+        width: 416px;
+      }
+        #offerName{
+        font-size: 18px;
+      }
+
+      #offerOwner{
+        font-size: 10px;
+      }
+
+      #offerType{
+        font-size: 10px;
+      }
+
+      .submitFav{
+        font-size: 8px;
+      }
+
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .tex2 {font-size: 11px}
+      }
+
+  
